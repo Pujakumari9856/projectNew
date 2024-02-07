@@ -1,0 +1,13 @@
+.header-section{
+    width: 100vw;
+    height: 60px;
+    background: #000000;
+}
+.all-images{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.all-images img{
+    margin: 0.3rem auto;
+}

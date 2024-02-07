@@ -1,0 +1,103 @@
+/* .active{
+    color: rgb(26, 189, 26);
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-items ul li .navtitle{
+    font-size: 0.82rem;
+    font-weight: 600;
+    /* color: #fff; */
+    color: black;
+    margin-right: 3px;
+}
+.nav-items ul li i{
+    font-size: 0.6rem;
+    color: #fff;
+}
+/* .navItems{
+    border: 2px solid #000000;
+    border-radius:20px;
+    padding:2px 8px;
+} */
+
+button{
+    height: 36px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px 30px;
+    background: rgb(26, 189, 26);
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5rem;
+    margin-right: 25px;
+    /* margin-left: 200px; */
+}
+.dropdowns{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto;
+    width: 200px;
+    position: absolute;
+    /* top:130px; */
+}
+.responsive-menu i{
+    display: none;
+}
+.newtry{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:750px) {
+    /* button{
+        display: none;
+    } */
+    .nav-items ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive-menu i{
+        display: block;
+        margin-right: 25px;
+        font-size: 1.6rem;
+    }
+    .logo img{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .newtry{
+        flex-direction: column;
+        /* changing */
+        position: absolute;
+        top: 10%;
+        left: 40%;
+    }
+    .showMenuProp{
+        display:none;
+    }
+    .dropdowns{
+        position: static;
+    }
+}
+@media (min-width:751px) {
+    .logo img{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
