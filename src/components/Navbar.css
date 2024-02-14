@@ -32,21 +32,6 @@
     padding:2px 8px;
 } */
 
-button{
-    height: 36px;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 2px 30px;
-    background: rgb(26, 189, 26);
-    font-size: 14px;
-    position: relative;
-    cursor: pointer;
-    border-radius: 5rem;
-    margin-right: 25px;
-    /* margin-left: 200px; */
-}
 .dropdowns{
     cursor: pointer;
     display: grid;

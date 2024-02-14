@@ -29,28 +29,30 @@ const Navbar = () => {
                     <nav className={`${showMenu ? 'showMenuProp' : ''}`}>
                         <ul>
                             <li className={` ${show ? 'navItems' : ''}`}>
-                                <NavLink className="navtitle nav-content" to="/passport">PASSPORT</NavLink>
+                                <NavLink className="navtitle nav-content" to="/passport">Home</NavLink>
                                 <i className='fa-solid fa-chevron-down nav-content'></i>
 
-                                {
-                                    show &&
-                                    <div>
-                                        <div className='dropdowns'>
-                                            <NavLink to="/passportapply">Passport Apply</NavLink>
-                                            <NavLink to="/passportapplyn">Passport Apply-Normal</NavLink>
-                                            <NavLink to="/passportapplyt">Passport Apply-Tatkal</NavLink>
-                                            <NavLink to="/checkavailability">Check Appointment Availability</NavLink>
-                                            <NavLink to="/trackstatus">Track Application Status</NavLink>
-                                        </div>
-                                        <Routes>
-                                            <Route path="/passportapply" element={<div>Passport Apply</div>} />
-                                            <Route path="/passportapplyn" element={<div>Passport Apply-Normal</div>} />
-                                            <Route path="/passportapplyt" element={<div>Passport Apply-Tatkal</div>} />
-                                            <Route path="/checkavailability" element={<div>Check Appointment Availability</div>} />
-                                            <Route path="/trackstatus" element={<div>Track Application Status</div>} />
-                                        </Routes>
-                                    </div>
-                                }
+                                {/* Dropdowns */}
+                    {
+                    show &&
+                    <div>
+                        <div className='dropdowns'>
+                            <NavLink to="/passportapply">Passport Apply</NavLink>
+                            <NavLink to="/passportapplyn">Passport Apply-Normal</NavLink>
+                            <NavLink to="/passportapplyt">Passport Apply-Tatkal</NavLink>
+                            <NavLink to="/checkavailability">Check Appointment Availability</NavLink>
+                            <NavLink to="/trackstatus">Track Application Status</NavLink>
+                           
+                        </div>
+                        <Routes>
+                            <Route path="/passportapply" element={<div>Passport Apply</div>} />
+                            <Route path="/passportapplyn" element={<div>Passport Apply-Normal</div>} />
+                            <Route path="/passportapplyt" element={<div>Passport Apply-Tatkal</div>} />
+                            <Route path="/checkavailability" element={<div>Check Appointment Availability</div>} />
+                            <Route path="/trackstatus" element={<div>Track Application Status</div>} />
+                        </Routes>
+                    </div>
+                }
                             </li>
                             <li>
                                 <NavLink className="navtitle" to="/visas">VISAS</NavLink>
@@ -81,28 +83,7 @@ const Navbar = () => {
                             <Route path="/about" element={<Aboutus />} />
                         </Route>
                     </Routes>
-                    {/* Dropdowns */}
-                    {/* {
-                    show &&
-                    <div>
-                        <div className='dropdowns'>
-                            <NavLink to="/passportapply">Passport Apply</NavLink>
-                            <NavLink to="/passportapplyn">Passport Apply-Normal</NavLink>
-                            <NavLink to="/passportapplyt">Passport Apply-Tatkal</NavLink>
-                            <NavLink to="/checkavailability">Check Appointment Availability</NavLink>
-                            <NavLink to="/trackstatus">Track Application Status</NavLink>
-                        </div>
-                        <Routes>
-                            <Route path="/passportapply" element={<div>Passport Apply</div>} />
-                            <Route path="/passportapplyn" element={<div>Passport Apply-Normal</div>} />
-                            <Route path="/passportapplyt" element={<div>Passport Apply-Tatkal</div>} />
-                            <Route path="/checkavailability" element={<div>Check Appointment Availability</div>} />
-                            <Route path="/trackstatus" element={<div>Track Application Status</div>} />
-                        </Routes>
-                    </div>
-                } */}
                 </div>
-
                 <button>JOIN NOW</button>
                 {/* <div>JOIN NOW</div>  */}
 
